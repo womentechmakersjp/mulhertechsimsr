@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    
+</head>
+<body style="overflow:hidden;">
+    <div id="loading">
+        <img id="loading-logo" src="images/LOGO_BLACK.png" />
+        <p> Carregando... </p>
+    </div>
+    <script>
+        window.scrollTo(0,0);
+        var loading = byId("loading");
+        setPropBy("id", "loading", false, "height", window.innerHeight + "px");
+    </script>
+    <header id="menu-principal" class="unfixed">
+        <img id="logo-white" class="btn-scroll" name="slider" src="images/LOGO_WHITE.png" />
+        <img id="logo-black" class="btn-scroll" name="slider" src="images/LOGO_BLACK.png" />
+           <nav>
+            <ul>
+                <li class="btn-scroll" name="o-estudio">O Estúdio</li>
+                <li class="btn-scroll" name="servicos">Serviços</li>
+                <li class="btn-scroll" name="loja">Loja</li>
+                <li class="btn-scroll" name="portfolio">Portfolio</li>
+                <li class="btn-scroll" name="canal">Canal</li>
+                <li class="btn-scroll" name="contato">Contato</li>
+            </ul>
+        </nav>
+        <div id="social">
+                <a id="ig"></a>
+                <a id="fb"></a>
+                <a id="vimeo"></a>
+                <a id="ytb"></a>
+        </div>
+    </header>
+    <main>
+        <section id="slider">
+            <div id="esquerda" class="left"><</div>
+            <div id="slides">
+                <div class="slide" style="background-image: url(images/header_secao.jpg)">
+                    <p class="slide-content">
+                        <img src="images/Canal_Legenda.png" />
+                        <span class="text-slide">
+                            Pittanga também tem um canal youtube pra falar de assuntos que permeiam o universo 
+                            empreendedor criativo. Com série por trás das câmeras, gatos fofinhos e muito mais!
+                        </span>
+                        <span class="btn-slide">INSCREVA-SE</span>
+                    </p>
+                </div>
+                <div class="slide" style="background-image: url(images/header_secao.jpg)">
+                    <p class="slide-content">
+                        <img src="images/Blog_Legenda.png" />
+                        <span class="text-slide">
+                        Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis
+                        </span>
+                        <span class="btn-slide">LEIA MAIS</span>
+                    </p>
+                </div>
+                <div class="slide" style="background-image: url(images/header_secao.jpg)">
+                    <p class="slide-content">
+                        <img src="images/Estudio_Legenda.png" />
+                        <span class="text-slide">
+                        Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis
+                        </span>
+                        <span class="btn-slide">ASSISTA</span>
+                    </p>
+                </div>
+            </div>
+            <div id="direita" class="right">></div>
+        </section>
+        <section id="o-estudio"> 
+            <div class="cabecalho-secao">
+                <img class="cabecalho-img" src="images/Estudio_Legenda.png" />
+                <div class="barra-seta">
+                    <div class="barra-esquerda"></div>
+                    <div class="seta"></div>
+                    <div class="barra-direita"></div>
+                </div>
+            </div>
+            <div class="conteudo">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+</p>
+           <h1> EQUIPE </h1>
+            <div id="equipe">
+                <div id="flavia">
+                    <img src="" />
+                    <p>Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.</p>
+                    <div class="sociais">
+                        <a id="ig"></a><a id="fb"></a><a id="vimeo"></a>
+                    </div>    
+                </div>
+                <div id="arthur">
+                    <img src="" /> 
+                    <p>Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.</p>
+                    <div class="sociais">
+                        <a id="ig"></a><a id="fb"></a><a id="vimeo"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="newsletter">
+                <span>ASSINE NOSSA NEWSLETTER</span>
+                <form>
+                    <input type="email" name="email" placeholder="DIGITE SEU EMAIL" />
+                    <input type="text" name="nome" placeholder="DIGITE SEU NOME" />
+                </form>
+            </div>
+            </div>
+        </section>
+        <section id="servicos">  
+            <div class="cabecalho-secao">
+                <img class="cabecalho-img" src="images/Estudio_Legenda.png" />
+                <div class="barra-seta">
+                    <div class="barra-esquerda"></div>
+                    <div class="seta"></div>
+                    <div class="barra-direita"></div>
+                </div>
+            </div>
+            <div class="conteudo">
+                <div id="lista-servicos">
+                    <div class="servico"></div>
+                    <div class="servico"></div>
+                    <div class="servico"></div>
+                    <div class="servico"></div>
+                    <div class="servico"></div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="loja">  
+            <div class="cabecalho-secao">
+                <img class="cabecalho-img" src="images/Loja_Legenda.png" />
+                <div class="barra-seta">
+                    <div class="barra-esquerda"></div>
+                    <div class="seta"></div>
+                    <div class="barra-direita"></div>
+                </div>
+            </div>
+            <div class="conteudo">
+                <a class="btn"> VISITE A LOJA</a>
+                
+                <div id="produtos">
+                    <div class="produto"><a><span>comprar</span></a></div>
+                    <div class="produto"><a><span>comprar</span></a></div>
+                    <div class="produto"><a><span>comprar</span></a></div>
+                    <div class="produto"><a><span>comprar</span></a></div>
+                    <div class="produto"><a><span>comprar</span></a></div>
+                    <div class="produto"><a><span>comprar</span></a></div>
+                </div>                
+            </div>
+        </section>
+        <section id="portfolio"> 
+            <div class="cabecalho-secao">
+                <img class="cabecalho-img" src="images/Portfolio_Legenda.png" />
+                <div class="barra-seta">
+                    <div class="barra-esquerda"></div>
+                    <div class="seta"></div>
+                    <div class="barra-direita"></div>
+                </div>
+            </div>
+            <div class="conteudo"></div>
+        </section>
+        <section id="canal"> 
+            <div class="cabecalho-secao">
+                <img class="cabecalho-img" src="images/Canal_Legenda.png" />
+                <div class="barra-seta">
+                    <div class="barra-esquerda"></div>
+                    <div class="seta"></div>
+                    <div class="barra-direita"></div>
+                </div>
+            </div>
+            <div class="conteudo"></div>
+    </section>
+        <section id="contato">  
+        <div class="cabecalho-secao">
+            <img class="cabecalho-img" src="images/Canal_Legenda.png" />
+            <div class="barra-seta">
+                <div class="barra-esquerda"></div>
+                <div class="seta"></div>
+                <div class="barra-direita"></div>
+            </div>
+        </div>
+        <div class="conteudo"></div>
+    </section>
+    </main>
+</body>
+
+</html>
