@@ -1,49 +1,225 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
-    
+
+    <style type="text/css"></style>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet" type="text/css">
 </head>
-<body style="overflow:hidden;">
-    <div id="loading">
-        <img id="loading-logo" src="images/LOGO_BLACK.png" />
-        <p> Carregando... </p>
-    </div>
+
+<body style="overflow: auto;">
+
     <script>
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
         var loading = byId("loading");
-        setPropBy("id", "loading", false, "height", window.innerHeight + "px");
+        //setPropBy("id", "loading", false, "height", window.innerHeight + "px");
     </script>
     <header id="menu-principal" class="unfixed">
-        <img id="logo" class="btn-scroll" name="programacao" src="images/LOGO_WHITE.png" />
-           <nav>
+        <nav>
             <ul>
                 <li class="btn-scroll" name="programacao">Programação</li>
-                <li class="btn-scroll" name="programacao">Quem somos</li>
-                <li class="btn-scroll" name="programacao">Quem somos</li>
+                <li class="btn-scroll" name="quem-faz">Quem faz</li>
+                <li class="btn-scroll" name="quem-apoia">Quem apoia</li>
+                <li class="btn-scroll" name="programacao"><img id="logo" src="images/logo.png">
+                </li>
+                <li href="minha-agenda"> Minha agenda </li>
             </ul>
         </nav>
         <div id="social">
-                <a id="ig"></a>
-                <a id="fb"></a>
-                <a id="vimeo"></a>
-                <a id="ytb"></a>
+            <a id="ig"></a>
+            <a id="fb"></a>
+            <a id="ytb"></a>
         </div>
     </header>
     <main>
         <section id="programacao">
-            <div class="cabecalho-secao">
-                <img class="cabecalho-img" src="" />
-            </div>
+          <header><h2>Programação</h2></header>
             <div class="conteudo">
-                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-            </p>
+                <div id="descricao-inicio">
+                    <div><div class="small-title">
+                        <h4>Primeira vez aqui?</h4>
+                    </div>
+                    <h2 class="title"> VEJA NOSSA PROGRAMAÇÃO!</h2>
+                    <p> Explore ao lado nosso calendário: temos eventos interessantissimos durante todo o mês de março! Confira o conteúdo das atividades e se inscreva! :D Você terá seu código único de identificação e poderá checar sua agenda clicando em "Minha agenda" no menu acima.</p>
+                    </div>
+                </div>
+
+                <div id="descricao-evento">
+                   <div>
+                    <h3> Nome do evento </h3>
+                    <ul>
+                        <li> Palestra 1 </li>
+                        <li> Palestra 2 </li>
+                        <li> Palestra 3 </li>
+                    </ul>
+                    
+                    <a> inscrever </a>
+                    <a> veja mais... </a>
+                    
+                    </div>
+                </div>
+
+                <div id="calendario-wrap">
+                    <div>
+                       <table class="calendario">
+                        <thead>
+                            <tr>
+                                <th colspan="7"><span class="monthName"> Março 2016 </span>
+                                </th>
+                            </tr>
+                            <tr class="days">
+                                <th>Seg</th>
+                                <th>Ter</th>
+                                <th>Qua</th>
+                                <th>Qui</th>
+                                <th>Sex</th>
+                                <th>Sab</th>
+                                <th>Dom</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="semana">
+                                <td class="date not-march" data-date="2016-2-29">29</td>
+                                <td class="date past event" data-date="2016-03-1">1</td>
+                                <td class="date past" data-date="2016-03-2">2</td>
+                                <td class="date past" data-date="2016-03-3">3</td>
+                                <td class="date today" data-date="2016-03-4">4</td>
+                                <td class="date event" data-date="2016-03-5">5</td>
+                                <td class="date" data-date="2016-03-6">6</td>
+                            </tr>
+                            <tr class="semana">
+                                <td class="date" data-date="2016-03-7">7</td>
+                                <td class="date" data-date="2016-03-8">8</td>
+                                <td class="date" data-date="2016-03-9">9</td>
+                                <td class="date" data-date="2016-03-10">10</td>
+                                <td class="date" data-date="2016-03-11">11</td>
+                                <td class="date event" data-date="2016-03-12">12</td>
+                                <td class="date" data-date="2016-03-13">13</td>
+                            </tr>
+                            <tr class="semana">
+                                <td class="date" data-date="2016-03-14">14</td>
+                                <td class="date" data-date="2016-03-15">15</td>
+                                <td class="date" data-date="2016-03-16">16</td>
+                                <td class="date" data-date="2016-03-17">17</td>
+                                <td class="date" data-date="2016-03-18">18</td>
+                                <td class="date" data-date="2016-03-19">19</td>
+                                <td class="date" data-date="2016-03-20">20</td>
+                            </tr>
+                            <tr class="semana">
+                                <td class="date" data-date="2016-03-21">21</td>
+                                <td class="date" data-date="2016-03-22">22</td>
+                                <td class="date" data-date="2016-03-23">23</td>
+                                <td class="date" data-date="2016-03-24">24</td>
+                                <td class="date" data-date="2016-03-25">25</td>
+                                <td class="date" data-date="2016-03-26" class="prev-date">26</td>
+                                <td class="date" data-date="2016-03-27" class="prev-date">27</td>
+                            </tr>
+                            <tr class="semana">
+                                <td class="date" data-date="2016-03-28">28</td>
+                                <td class="date" data-date="2016-03-29">29</td>
+                                <td class="date" data-date="2016-03-30">30</td>
+                                <td class="date event" data-date="2016-03-31">31</td>
+                                <td class="date not-march" data-date="2016-4-1">1</td>
+                                <td class="date not-march" data-date="2016-4-2">2</td>
+                                <td class="date not-march" data-date="2016-4-3">3</td>
+                            </tr>
+                        </tbody>
+                    </table
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="quem-faz">
+          <header><h2>Quem faz</h2></header>
+           <div class="conteudo">
+                <div class="profile">
+                        <div class="foto"> <img src="images/profile.png" />
+                        </div>
+                        <p class="profile-short-bio"> A bixa é arroxada viu. Trabalhou em tudo o que era trabalho ja. Massa dimai </p>
+                    <div class="profile-social"> <a id="ig"></a> <a id="fb"></a> <a id="ytb"></a></div>
+                </div>
+                <div class="profile">
+                        <div class="foto"> <img src="images/profile.png" />
+                        </div>
+                        <p class="profile-short-bio"> A bixa é arroxada viu. Trabalhou em tudo o que era trabalho ja. Massa dimai </p>
+                    <div class="profile-social"> <a id="ig"></a> <a id="fb"></a> <a id="ytb"></a></div>
+                </div>
+                <div class="profile">
+                        <div class="foto"> <img src="images/profile.png" />
+                        </div>
+                        <p class="profile-short-bio"> A bixa é arroxada viu. Trabalhou em tudo o que era trabalho ja. Massa dimai </p>
+                    <div class="profile-social"> <a id="ig"></a> <a id="fb"></a> <a id="ytb"></a></div>
+                </div>
+                <div class="profile">
+                        <div class="foto"> <img src="images/profile.png" />
+                        </div>
+                        <p class="profile-short-bio"> A bixa é arroxada viu. Trabalhou em tudo o que era trabalho ja. Massa dimai </p>
+                    <div class="profile-social"> <a id="ig"></a> <a id="fb"></a> <a id="ytb"></a></div>
+                </div>
+                <div class="profile">
+                        <div class="foto"> <img src="images/profile.png" />
+                        </div>
+                        <p class="profile-short-bio"> A bixa é arroxada viu. Trabalhou em tudo o que era trabalho ja. Massa dimai </p>
+                    <div class="profile-social"> <a id="ig"></a> <a id="fb"></a> <a id="ytb"></a></div>
+                </div>
+                <div class="profile">
+                        <div class="foto"> <img src="images/profile.png" />
+                        </div>
+                        <p class="profile-short-bio"> A bixa é arroxada viu. Trabalhou em tudo o que era trabalho ja. Massa dimai </p>
+                    <div class="profile-social"> <a id="ig"></a> <a id="fb"></a> <a id="ytb"></a></div>
+                </div>
+            
+            </div>
+        </section>
+        <section id="quem-apoia">
+          <header><h2>Quem apoia</h2></header>
+            <div class="conteudo">
+                <div class="apoio">
+                    <img src="images/logo.png" />
+                    <p> Realização </p>
+                </div>
+                <div class="apoio">
+                    <img src="images/logo.png" />
+                    <p> Patrocinio Ouro </p>
+                </div>
+                <div class="apoio">
+                    <img src="images/logo.png" />
+                    <p> Patrocinio Prata </p>
+                </div>
+                <div class="apoio">
+                    <img src="images/logo.png" />
+                    <p> Instituição Parceira </p>
+                </div>
+                <div class="apoio">
+                    <img src="images/logo.png" />
+                    <p> Comunidade Parceira </p>
+                </div>
+                <div class="apoio">
+                    <img src="images/logo.png" />
+                    <p> Realização </p>
+                </div>
+                <div class="apoio">
+                    <img src="images/logo.png" />
+                    <p> Patrocinio Ouro </p>
+                </div>
+                <div class="apoio">
+                    <img src="images/logo.png" />
+                    <p> Patrocinio Prata </p>
+                </div>
+                <div class="apoio">
+                    <img src="images/logo.png" />
+                    <p> Instituição Parceira </p>
+                </div>
+                <div class="apoio">
+                    <img src="images/logo.png" />
+                    <p> Comunidade Parceira </p>
+                </div>
             </div>
         </section>
     </main>
+
 </body>
 
 </html>
